@@ -1,34 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
-h1 {
-    font-family: 'Rubik Mono One', monospace;
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: monospace;
-    color: white;
-    background-color: grey;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: blue;
+    font-family: 'Rubik Mono One', monospace;
+    color: black;
+    background-color: white;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(43, 48, 58, 0.8);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    background-color: black;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header > nav a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+header > nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+header > nav ul {
+    margin-right: 40px;
+}
+
+header > nav li {
+    display: inline-block;
+}
+
+#header__title {
+    background-color: #eaba6b;
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#header__title:hover {
+    color: white;
+}
+
+#main__welcome-section {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main__news-section {
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
