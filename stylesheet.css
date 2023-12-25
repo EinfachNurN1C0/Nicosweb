@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
+:root {
+    --background__color: #eaba6b;
+    --another__color: #FFBC7D;
+    --text_color-1: #000000;
+    --text_color-2: #FFFFFF;
+
+}
 * {
     margin: 0;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Rubik Mono One', monospace;
     color: black;
-    background-color: white;
+    background-color: var(--background__color);
 }
 
 header {
-    background-color: black;
+    background-color: var(--another__color);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -23,14 +34,14 @@ header {
 
 header > nav a {
     text-decoration: none;
-    color: white;
-    border: 2px solid white;
+    color: var(--text_color-1);
+    border: 2px solid var(--text_color-1);
     border-radius: 8px;
     padding: 5px;
 }
 
 header > nav a:hover {
-    background-color: white;
+    background-color: var(--text_color-2);
     color: black;
     border-radius: 8px;
     padding: 5px;
@@ -45,8 +56,7 @@ header > nav li {
 }
 
 #header__title {
-    background-color: #eaba6b;
-    color: black;
+    color: var(--text_color-1);
     margin-left: 10px;
     text-decoration: none;
     padding: 5px;
@@ -54,7 +64,7 @@ header > nav li {
 }
 
 #header__title:hover {
-    color: white;
+    color: var(--text_color-2);
 }
 
 #main__welcome-section {
