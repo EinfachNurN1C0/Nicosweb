@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicosweb | Homepage</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Nicosweb | Home</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@32,400,0,0">
 </head>
 <body>
-    <header class="header">
-        <div class="header text">
-            <a href="index.html"><h1>Nicosweb</h1></a>
-        </div>
-        <div class="header navbar">
-            <a href="Sites/projects.html">Projects</a>
-            <a href="Sites/contact.html">Contact</a>
-        </div>
+    <header>
+        <a id="header__title" href="#"><h1>Nicosweb</h1></a>
+        <nav>
+            <ul>
+                <li><a href="#main__news-section">News</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="main">
-        <div class="main-introduction-text">
-            <h2>Hi, I'm Nico</h2>
-            I'm a 16 year old student from Germany.<br>
-            I'm interested in server and network administration.
-        </div>
+    <main>
+        <section id="main__welcome-section">
+            <h1>
+                Hi, I'm Nico<br>
+                Welcome to my website
+            </h1>
+            <a href="#main__news-section"><span class="material-symbols-outlined">expand_more</span></a>
+        </section>
+        <section id="main__news-section">
+            <a href="#"><span class="material-symbols-outlined">expand_less</span></a>
+            <h2>News</h2>
+            <p>This news section is currently under construction</p>
+        </section>
     </main>
-    <footer class="footer">
+    <footer>
 
     </footer>
 </body>
