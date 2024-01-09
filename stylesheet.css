@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 1.5rem;
 }
 
 header li {
@@ -29,7 +29,7 @@ header li {
 header a {
     text-decoration: none;
     color: white;
-    padding: 5px;
+    padding: 0.6rem;
 }
 
 header a:hover {
@@ -40,7 +40,7 @@ header a:hover {
 #header__title {
     border-radius: 8px;
     border: 2px solid var(--color-2);
-    padding: 5px;
+    padding: 0.7rem;
     color: white;
     font-size: 2rem;
 }
